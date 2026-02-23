@@ -3,49 +3,29 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
 ---
 
-<BaseLayout title = "Projects" sideBarActiveItemID="projects">
+<BaseLayout title = "Projects | Johana Veas" sideBarActiveItemID="projects">
   <div>
-    <div class="text-3xl w-full font-bold mb-5">Projects Header</div>
+    <div class="text-3xl w-full font-bold mb-5">Independent Development </div>
   </div>
 
   <HorizontalCard
-    title="Demo Project 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="NEW"
+    title="Sistema de Gestión de Inventario & Ventas"
+    img="/java-soft.jpg"
+    desc="Arquitectura backend completa. Implementa jerarquía de servicios, persistencia avanzada con JPA y manejo de lógica de negocio compleja."
+    url="https://github.com/JohanaMDev/inventory_app"
+    badge="DESTACADO"
+    tags={["Java", "Spring Boot", "PostgreSQL", "JPA"]}
   />
   <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
-
-  <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Projects Header</div>
+    <div>
+    <div class="text-3xl w-full font-bold mb-5">Team Projects </div>
   </div>
-
   <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="FOSS"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 4"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 5"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
+    title="FraveMax Sistema de Ventas de Electrodomésticos"
+    img="/team-work.jpg"
+    desc="Desarrollo de un sistema de ventas para una cadena de electrodomésticos. Incluye gestión de productos, clientes y reportes de ventas."
+    url="https://github.com/JohanaMDev/VentasFraveMax"
+    badge="Proyecto Final de Argentina Programa 4.0"
+    tags={["Java", "Java Swing", "Git/GitHub", "Scrum", "MySQL", "Xampp"]}
+  />  
 </BaseLayout>

@@ -5,88 +5,149 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 
 <BaseLayout title="Resume" sideBarActiveItemID="cv">
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Profile</div>
+    <div class="text-3xl w-full font-bold">Perfil Profesional</div>
   </div>
 
   <div class="mb-10 text-justify">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    Líder de proyecto nata con perfil técnico y mentalidad <b>"Get things done"</b>. 
+    Especializada en el desarrollo de software con Java, con un enfoque en entender el "porqué" del negocio para ejecutar el "cómo" técnico de manera eficiente. 
+    Capacidad probada para diseñar arquitecturas robustas y gestionar flujos de trabajo bajo presión, manteniendo siempre una visión macro y una comunicación directa.
   </div>
+
+ <div class="mb-5">
+  <div class="text-3xl w-full font-bold">Educación & Formación Continua</div>
+</div>
+<div class="time-line-container grid gap-4 mb-10">
+  <TimeLineElement
+    title="Desarrollador Java Full Stack"
+    subtitle="Finalizado el 03/11/2023 en Universidad de La Punta (Argentina Programa 4.0)"
+  >
+    <div class="py-2">
+      <p class="mb-3">Trayecto formativo profesional enfocado en el desarrollo de aplicaciones 
+        robustas y escalables.<br>
+       Certificación conjunta del Ministerio de Economía y la Cámara de la Industria Argentina
+        del Software (CESSI), reconocida por empresas del sector TIC.</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-4 text-sm">
+        <ul class="list-disc ml-5">
+          <li><b>Arquitectura:</b> Java & SQL (Backend Profundo).</li>
+          <li><b>Frontend:</b> Desarrollo de Interfaces Gráficas.</li>
+        </ul>
+        <ul class="list-disc ml-5">
+          <li><b>Persistencia:</b> JDBC / JPA y APIs Web.</li>
+          <li><b>Entregables:</b> Proyectos finales integradores.</li>
+        </ul>
+      </div>
+      <div class="mt-4 flex flex-wrap items-center gap-3">
+        <div class="badge badge-primary font-bold">480 Horas Cátedra</div>
+        <a href="certificado-java.jpg" target="_blank" class="btn btn-sm btn-outline btn-primary normal-case">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-1"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+          Ver Certificado
+        </a>
+      </div>
+    </div>
+  </TimeLineElement>
+
+  <TimeLineElement
+    title="Python"
+    subtitle="Finalizado el 15/03/2023 en Universidad Tecnológica Nacional (UTN - Facultad Regional San Francisco)"
+  >
+    <div class="py-2 text-sm">
+      <p class="mb-2">Formación en lógica de programación y scripting avanzado, fortaleciendo la capacidad de resolución de algoritmos complejos. 
+        <br> Dictado por el Instituto Instrumenta</p>
+      
+      <div class="flex flex-wrap items-center gap-3 mt-2">
+        <div class="badge badge-primary font-bold">48 Horas Cátedra</div>
+        <a href="certificado-python.jpg"  target="_blank" class="btn btn-sm btn-outline btn-primary normal-case">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-1"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+          Ver Certificado
+        </a>
+      </div>
+    </div>
+  </TimeLineElement>
+
+  <TimeLineElement
+    title="Programación Web Full Stack"
+    subtitle="Finalizado el 30/11/2021 en Egg / Gobierno de Mendoza"
+  >
+  Formación intensiva basada en aprendizaje cooperativo aprendiendo a pedir ayuda,
+         colaborar y explicar soluciones, como en el entorno laboral real, cubriendo el ciclo completo
+          de desarrollo de aplicaciones Java.
+    <div class="py-2 text-sm">
+           
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-2 mb-4 text-sm">
+        <div>
+          <b class="text-primary uppercase tracking-wider">Especialización Java:</b>
+          <ul class="list-disc ml-5 mt-1">
+            <li>POO, Herencia y Manejo de Excepciones</li>
+            <li>Persistencia con <b>JDBC y JPA</b></li>
+            <li>Anotaciones de <b>Spring</b> y Servicios</li>
+          </ul>
+        </div>
+        <div>
+          <b class="text-primary uppercase tracking-wider">Base de Datos y Web:</b>
+          <ul class="list-disc ml-5 mt-1">
+            <li>Modelado <b>MySQL</b></li>
+            <li>HTML, CSS y JavaScript</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap items-center gap-3 mt-2">
+        <div class="badge badge-primary font-bold">500 Horas Cátedra</div>
+        <a href="programacion-web.jpg" target="_blank" class="btn btn-sm btn-outline btn-primary normal-case">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-1"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+          Ver Certificado
+        </a>
+      </div>
+    </div>
+  </TimeLineElement>
+</div>
+
+
+
 
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Education</div>
-  </div>
-
-  <div class="time-line-container grid gap-4 mb-10">
-    <TimeLineElement
-      title="Title Name"
-      subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
-    />
-    <TimeLineElement
-      title="Title Name"
-      subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
-    />
-  </div>
-
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Experience</div>
+    <div class="text-3xl w-full font-bold">Experiencia Destacada</div>
   </div>
 
   <div class="time-line-container mb-10">
     <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
+      title="Desarrolladora Java & Lead de Proyecto Independiente"
+      subtitle="Desde Enero 2026 hasta la actualidad"
     >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-    </TimeLineElement>
-    <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-    </TimeLineElement>
-    <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+      Diseño y ejecución de un <b>Sistema de Gestión de Inventario</b> integral. 
+      Implementación de jerarquías de servicios para validación de datos (Venta -> Empleado -> Puesto), 
+      manejo de autenticación, lógica de proveedores y gestión fiscal de usuarios. 
+      Uso intensivo de Spring Boot, PostgreSQL y despliegue continuo mediante GitHub Actions.
     </TimeLineElement>
   </div>
 
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Certifications</div>
+    <div class="text-3xl w-full font-bold">Skills Técnicos (Stack)</div>
   </div>
 
-  <ul class="list-disc mx-6 mb-10 grid gap-2">
-    <li>
-      <a href="#" target="_blank"> Certification Name (with link)</a>
-    </li>
-    <li>
-      <a href="#" target="_blank"> Certification Name (with link)</a>
-    </li>
+  <ul class="list-disc md:columns-3 columns-2 mx-6 mb-10">
+    <li><b>Java (Core)</b></li>
+    <li><b>Spring Boot</b></li>
+    <li>PostgreSQL / dBeaver</li>
+    <li>Postman (API Testing)</li>
+    <li>Git / GitHub Actions</li>
+    <li>Arquitectura de Microservicios</li>
+    <li>Metodologías Ágiles</li>
+    <li>Maven</li>
+    <li>Tailwind CSS / Astro</li>
   </ul>
 
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Skills</div>
+    <div class="text-3xl w-full font-bold">Soft Skills</div>
   </div>
 
-  <ul class="list-disc md:columns-5 columns-2 mx-6">
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
+  <ul class="list-disc md:columns-2 columns-1 mx-6">
+    <li>Liderazgo de Proyecto</li>
+    <li>Resiliencia bajo presión</li>
+    <li>Comunicación Directa y Concisa</li>
+    <li>Visión Macro (Arquitectónica)</li>
+    <li>Resolución de Problemas Complejos</li>
   </ul>
 </BaseLayout>
+

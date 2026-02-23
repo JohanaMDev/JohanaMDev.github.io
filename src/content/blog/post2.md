@@ -1,16 +1,38 @@
 ---
-title: "Demo Post 2"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-pubDate: "Sep 11 2022"
-heroImage: "/post_img.webp"
+title: "Behind the Code: Quien está detrás"
+description: "Resiliencia de acero y el camino de la autogestión técnica."
+pubDate: "Feb 22 2026"
+heroImage: "/women-dev.jpg"
+badge: "STORYTELLING"
+tags: ["resiliencia", "career-path", "leadership"]
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+### El "Cómo" sobre el "Qué"
+Como alguien con **resiliencia de acero**, no veo el código solo como sintaxis, sino como la arquitectura que permite que un negocio funcione. Mi mentalidad de **"Get things done"** me ha llevado a construir soluciones donde la lógica de negocio es la prioridad.
 
-Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc. Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra massa massa ultricies mi.
+Si bien vengo de utilizar herramientas de gestión comercial, *hoy prefiero construir las herramientas yo misma.*
 
-Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
+---
 
-Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id cursus metus aliquam eleifend mi.
+### Compromiso con la Excelencia Técnica
+Mi transición al desarrollo no es casualidad, es **causalidad**. Mientras cumplo con mi jornada laboral actual de 8 horas en un sector distinto, aplico mi **Visión Macro** para dedicar mis tiempos extra al **desarrollo de sistemas**. 
 
-Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
+Esta dualidad me ha dado una gran ventaja competitiva: la **capacidad de gestionar proyectos bajo presión y una disciplina inquebrantable para el aprendizaje** de nuevas tecnologías. 
+
+---
+
+### Ambición y Exigencia
+¿Ambición? Por supuesto que sí. Tengo la certeza de que puedo lograrlo y por eso me exijo al máximo. No acepto un "funciona" cuando sé que puede ser **excelente**. Mi camino no ha sido el convencional, pero mi determinación para dominar la **Ingeniería de Software** es inquebrantable.
+
+*Cada línea de código que escribo después de mi jornada laboral es una prueba de que mi compromiso con mi carrera no tiene techo.*
+
+---
+
+### Mi Foco Actual
+Actualmente, ejecuto un plan de ingeniería de 11 meses orientado a:
+* **Backend Robustez:** Arquitecturas limpias y lógica de negocio compleja en Java.
+* **Frontend Evolution:** Migración hacia interfaces dinámicas con React.
+* **Inglés:** Retomando el idioma para conectar con la comunidad global de desarrollo.
+
+
+*Programar no es mi hobby, es mi siguiente gran cierre de ventas técnico.*

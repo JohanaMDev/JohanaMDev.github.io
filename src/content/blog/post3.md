@@ -1,57 +1,53 @@
 ---
-title: "Demo Post 3"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-pubDate: "Sep 12 2022"
-heroImage: "/post_img.webp"
-badge: "Demo badge"
-tags: ["rust","tokio"]
+title: "Ingeniería Personal: Mi Roadmap de Especialización Java"
+description: "Un desafío de 11 meses diseñado para adquirir competencias de nivel Senior mediante el desarrollo de software robusto."
+pubDate: "Feb 22 2026"
+heroImage: "/focus-dev.jpg"
+badge: "ESTRATEGIA"
+tags: ["roadmap", "java-senior", "autodidacta"]
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer
-malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas
-pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse
-platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada
-fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus
-vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea
-dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst
-quisque sagittis purus sit amet.
+### El Desafío: Autogestión Académica
+Ante la imposibilidad de cursar una carrera universitaria tradicional, he diseñado mi propio **Plan de Carrera de 11 meses**. Mi objetivo no es solo aprender a programar, sino dominar las competencias de un **Desarrollador Java Senior**: desde algoritmos y estructuras de datos hasta arquitecturas distribuidas y liderazgo técnico.
 
-Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum
-quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet.
-Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus.
-Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit
-ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt
-dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc.
-Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus
-arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed
-tempus urna et pharetra pharetra massa massa ultricies mi.
+---
 
-Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam
-sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec.
-Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna
-fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et
-egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel
-turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra
-nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus
-vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim
-praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus
-egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam
-ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor
-purus non. Amet dictum sit amet justo donec enim.
+### Pilares de Formación
+He dividido mi aprendizaje en tres grandes ejes que replican una formación de grado:
+1. **POO Avanzada y Patrones:** No solo escribir código, sino diseñar con SOLID, KISS y patrones (Singleton, Factory, Strategy).
+2. **Persistencia Eficiente:** Gestión avanzada de datos con JPA/Hibernate y optimización de consultas SQL.
+3. **Ecosistema Spring:** Dominio total de Boot, Security y microservicios.
 
-Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut
-consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra.
-Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor
-dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor
-dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque
-eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim
-blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices
-tincidunt arcu. Id cursus metus aliquam eleifend mi.
+---
 
-Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus
-imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu
-cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt
-dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat
-sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida.
-Egestas integer eget aliquet nibh praesent tristique magna.
+### Mi Cronograma de Ingeniería 
+
+#### **Etapa 1: Ingeniería de Software y Persistencia (Meses 1-3)**
+* **Foco:** Fundamentos de Algoritmos y Diseño de Bases de Datos Relacionales.
+* **Proyecto Actual:** **Sistema de Gestión de Inventario**.
+* **Desafío:** Implementar lógica de negocio compleja y manejo de excepciones personalizadas.
+
+#### **Etapa 2: Arquitectura Web y Seguridad (Meses 4-6)**
+* **Foco:** Protocolos REST, Spring Security y JWT.
+* **Proyecto:** Task Manager Pro.
+* **Desafío:** Protección de datos sensibles y gestión de permisos (RBAC).
+
+#### **Etapa 3: Integración y Cloud (Meses 7-9)**
+* **Foco:** Sistemas Distribuidos, Docker y APIs de terceros.
+* **Proyecto:** Dashboard de Analytics en Tiempo Real con Spring WebFlux.
+
+#### **Etapa 4: Especialización Senior (Meses 10-11)**
+* **Foco:** Pruebas Unitarias (TDD), Optimización de Rendimiento y Metodologías Ágiles (SCRUM).
+* **Proyecto Final:** Refactorización a Microservicios o creación de un SaaS funcional.
+
+---
+
+### Metodología "The Professional Journey"
+Para asegurar la calidad de cada bloque, aplico un enfoque **Full Stack**:
+* **Backend:** Lógica robusta en Java.
+* **Frontend:** Interfaces "Pixel Perfect" (actualmente en transición a React).
+* **Seguridad:** Encriptación y Logins seguros como prioridad desde el día 1.
+
+---
+
+> **"Mi educación no depende de un aula, sino de la disciplina inquebrantable para transformar este roadmap en mi realidad profesional. Este portfolio es el registro vivo de mi evolución hacia la maestría técnica."**
