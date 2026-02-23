@@ -5,5 +5,5 @@ import tailwind from "@astrojs/tailwind";
 
 export default defineConfig({
   site: 'https://JohanaMDev.github.io',
-  integrations: [mdx(), sitemap(), tailwind()]
+  integrations: [mdx(), tailwind()]
 });
