@@ -22,13 +22,20 @@ const {
   <head>
     <BaseHead title={title} description={description} image={image} , ogType={ogType} />
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3775SWRYXE"></script>
-    <script>
+<script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-3775SWRYXE"></script>
+    <script is:inline>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
       gtag('config', 'G-3775SWRYXE');
+
+      // Escucha los cambios de página de Astro para que Analytics no se pierda nada
+      document.addEventListener('astro:page-load', () => {
+        window.gtag('config', 'G-3775SWRYXE', {
+          page_path: window.location.pathname,
+        });
+      });
     </script>
     <meta name="google-site-verification" content="F-hgbToUjLWvjMvkxqcmEntVTPnHd3VcjOOYEkyF1UM" />
     {TRANSITION_API && <ViewTransitions />}
