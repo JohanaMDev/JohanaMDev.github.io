@@ -21,6 +21,15 @@ const {
 <html lang="en" data-theme="lofi">
   <head>
     <BaseHead title={title} description={description} image={image} , ogType={ogType} />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3775SWRYXE"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-3775SWRYXE');
+    </script>
     {TRANSITION_API && <ViewTransitions />}
   </head>
   <body>
