@@ -2,14 +2,30 @@
 const today = new Date();
 ---
 
-<footer class="footer footer-center block mb-5 pt-10">
-  <div class="pb-2">
-    &copy; {today.getFullYear()} Manuel Ernesto
-  </div>
-  <div class="inline opacity-75">
-    Developed by <a href="https://manuelernestog.github.io" target="_blank" class="font-bold">Manuel Ernesto</a> using
-    <!-- Thanks for using this template. You can keep this line to support my work :) -->
-    <a href="https://astrofy-template.netlify.app/" target="_blank" class="font-bold">Astrofy Template ⚡️</a>
-  </div>
+<footer class="footer-container">
+    <div class="footer-content font-mono">
+        <span class="copyright-text">&copy; {today.getFullYear()} // JOHANA M. VEAS //</span>
+        <span class="tech-stack text-accent font-bold">BUILT WITH ASTRO & JAVA ENERGY ☕</span>
+    </div>
 </footer>
-<style></style>
+
+<style>
+    .footer-container {
+        padding: 3em 1em; /* Ajustamos padding para que respire */
+        text-align: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.05); /* Línea divisoria sutil */
+        margin-top: 2em;
+        background-color: rgba(0, 0, 0, 0.1); /* Ligero fondo para separarlo */
+    }
+    .footer-content {
+        font-size: 0.7rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+    }
+    .copyright-text {
+        color: rgba(255, 255, 255, 0.7); 
+    }
+    .text-accent {
+        color: #8be9fd;
+    }
+</style>
