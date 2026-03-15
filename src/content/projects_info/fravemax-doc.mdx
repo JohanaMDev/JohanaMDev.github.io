@@ -1,0 +1,136 @@
+---
+title: "FraveMax: Gestión de Ventas Retail"
+description: "Sistema integral desarrollado en Java para la Universidad de La Punta. Un desafío de arquitectura y trabajo en equipo."
+pubDate: "Oct 2023"
+heroImage: "../../assets/programacion-web.jpg"
+badge: "PROYECTO GRUPAL - ULP 📂"
+---
+import { Image } from 'astro:assets';
+import { Layers, ShieldCheck, Database, Layout, GitBranch, Cpu, CheckCircle2, Terminal, Rocket, Users} from 'lucide-astro';
+
+<div class="mt-8 mb-12">
+    <h2 class="text-3xl font-bold text-white mb-4">🖥️ Solución Retail Integral</h2>
+    <p class="text-lg text-slate-400 leading-relaxed border-l-4 border-secondary pl-6 italic">
+        "Desarrollado como proyecto final integrador para la Universidad de La Punta (ULP), FraveMax resuelve la complejidad del manejo de stock y facturación en un entorno de escritorio robusto y eficiente."
+    </p>
+</div>
+
+{/* --- FEATURE GRID --- */}
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 my-10 not-prose">
+  <div class="p-8 bg-gradient-to-br from-primary/10 to-transparent border border-white/10 rounded-3xl hover:border-primary/40 transition-all group">
+    <div class="w-12 h-12 bg-primary/20 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+        <Users class="text-primary" size={28} />
+    </div>
+    <h3 class="text-white font-bold text-xl mb-2">Trabajo Colaborativo</h3>
+    <p class="text-sm text-slate-400 leading-relaxed">Sincronización de lógica de negocio en equipo bajo estándares académicos de la ULP.</p>
+  </div>
+  
+  <div class="p-8 bg-gradient-to-br from-secondary/10 to-transparent border border-white/10 rounded-3xl hover:border-secondary/40 transition-all group">
+    <div class="w-12 h-12 bg-secondary/20 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+        <Database class="text-secondary" size={28} />
+    </div>
+    <h3 class="text-white font-bold text-xl mb-2">Persistencia JDBC</h3>
+    <p class="text-sm text-slate-400 leading-relaxed">Gestión directa de MySQL para un control total sobre las consultas y transacciones.</p>
+  </div>
+  
+  <div class="p-8 bg-gradient-to-br from-success/10 to-transparent border border-white/10 rounded-3xl hover:border-success/40 transition-all group">
+    <div class="w-12 h-12 bg-success/20 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+        <ShieldCheck class="text-success" size={28} />
+    </div>
+    <h3 class="text-white font-bold text-xl mb-2">Integridad de Datos</h3>
+    <p class="text-sm text-slate-400 leading-relaxed">Validaciones de stock en tiempo real que garantizan la consistencia del inventario.</p>
+  </div>
+</div>
+
+{/* --- ARQUITECTURA DE DESARROLLO --- */}
+<div class="my-16">
+    <div class="flex items-center gap-3 mb-8">
+        <Layers class="text-primary" />
+        <h2 class="text-2xl font-bold text-white uppercase tracking-wider">Arquitectura Técnica</h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="space-y-6">
+            <div class="flex gap-4">
+                <div class="flex-none w-1 bg-primary/30 rounded-full"></div>
+                <div>
+                    <h4 class="text-white font-bold mb-1">Entorno Desktop</h4>
+                    <p class="text-sm text-slate-400">Implementación de interfaz gráfica con **Java Swing**, enfocada en la velocidad de respuesta para el cajero.</p>
+                </div>
+            </div>
+            <div class="flex gap-4">
+                <div class="flex-none w-1 bg-secondary/30 rounded-full"></div>
+                <div>
+                    <h4 class="text-white font-bold mb-1">Modelo Relacional</h4>
+                    <p class="text-sm text-slate-400">Base de datos MySQL normalizada para evitar redundancias en la gestión de clientes y facturas.</p>
+                </div>
+            </div>
+            <div class="flex gap-4">
+                <div class="flex-none w-1 bg-success/30 rounded-full"></div>
+                <div>
+                    <h4 class="text-white font-bold mb-1">Lógica de Negocio</h4>
+                    <p class="text-sm text-slate-400">Uso de POO avanzado para separar la captura de datos de la lógica de persistencia.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white/[0.02] border border-white/10 rounded-3xl p-8">
+            <h5 class="text-xs font-mono text-primary mb-4 uppercase tracking-widest">// Technical Skills Applied</h5>
+            <ul class="space-y-4 font-mono text-xs">
+                <li class="flex items-center gap-2 text-slate-300"> <CheckCircle2 size={14} class="text-primary"/> JDBC Connector</li>
+                <li class="flex items-center gap-2 text-slate-300 ml-4"> <CheckCircle2 size={14} class="text-primary"/> SQL Query Optimization</li>
+                <li class="flex items-center gap-2 text-slate-400 ml-8 italic"> ↳ Normalización 3NF</li>
+                <li class="flex items-center gap-2 text-slate-400 ml-8 italic"> ↳ Transaction Management</li>
+                <li class="flex items-center gap-2 text-slate-300 ml-4"> <CheckCircle2 size={14} class="text-primary"/> Swing UI Components</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+{/* --- TEAM COLLABORATION --- */}
+<div class="bg-gradient-to-r from-blue-900/10 to-purple-900/10 border border-white/5 rounded-3xl p-8 md:p-12 my-16">
+    <div class="flex flex-col md:flex-row gap-10 items-center">
+        <div class="flex-1">
+            <div class="flex items-center gap-2 text-secondary mb-4 font-mono text-sm">
+                <Users size={18} />
+                <span>Team & Leadership</span>
+            </div>
+            <h3 class="text-3xl font-bold text-white mb-6">Colaboración de Alto Rendimiento</h3>
+            <p class="text-slate-400 leading-relaxed mb-6">
+                Este proyecto fue desarrollado bajo una metodología de equipo. Mi rol incluyó la **coordinación de la estructura del backend** y la implementación de la capa de datos, asegurando que todos los módulos se integraran sin conflictos en el repositorio central.
+            </p>
+            <div class="flex gap-4 mt-5">
+                <span class="px-3 py-1 bg-white/5 rounded-md text-[10px] text-slate-100 border border-white/10">ARGENTINA PROGRAMA 4.0</span>
+                <span class="px-3 py-1 bg-white/5 rounded-md text-[10px] text-slate-100 border border-white/10">UNIVERSITY PROJECT</span>
+                <span class="px-3 py-1 bg-white/5 rounded-md text-[10px] text-slate-100 border border-white/10">SQL DESIGN</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+{/* --- TECH STACK GLASS --- */}
+<div class="my-20 p-8 border border-white/10 rounded-3xl bg-white/[0.01]">
+    <h3 class="text-center text-xs font-mono text-slate-500 mb-8 uppercase tracking-widest">Stack Tecnológico & Herramientas</h3>
+    <div class="flex flex-wrap justify-center gap-3">
+        {["Java SE", "JDBC", "MySQL", "Maven", "IntelliJ IDEA", "Git", "Java Swing"].map((tech) => (
+            <div class="px-4 py-2 bg-white/5 border border-white/10 rounded-xl text-[11px] font-mono text-slate-400 hover:text-secondary hover:border-secondary/50 transition-colors">
+                {tech}
+            </div>
+        ))}
+    </div>
+</div>
+
+{/* --- FINAL CTA --- */}
+<div class="mt-20 p-12 bg-gradient-to-b from-secondary/10 to-transparent border border-white/10 rounded-[3rem] text-center">
+    <h2 class="text-3xl font-bold text-white mb-6">Formación Académica con Impacto Real</h2>
+    <p class="text-slate-400 mb-10 max-w-2xl mx-auto">
+        FraveMax representa los cimientos de mi carrera como desarrolladora, aplicando rigurosidad técnica y trabajo en equipo para alcanzar objetivos complejos.
+    </p>
+    <div class="flex flex-col md:flex-row gap-4 justify-center mt-6">
+        <a href="https://github.com/JohanaMDev/VentasFraveMax" target="_blank" class="btn btn-secondary btn-wide group flex items-center justify-center gap-2">
+            Ver Repositorio 
+            <GitBranch size={18} class="group-hover:rotate-12 transition-transform"/>
+        </a>
+        <a href="/projects" class="btn btn-outline btn-wide">Volver a Proyectos</a>
+    </div>
+</div>
