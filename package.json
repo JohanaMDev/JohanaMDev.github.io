@@ -23,6 +23,5 @@
   },
   "devDependencies": {
     "daisyui": "^5.5.19"
-  },
-  "packageManager": "pnpm@9.0.0"
+  }
 }
