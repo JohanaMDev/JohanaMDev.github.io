@@ -1,0 +1,180 @@
+---
+title: "Sistema de Gestión de Inventario & Ventas"
+description: "Documentación de arquitectura backend y lógica de negocio escalable para el uso real en comercios."
+pubDate: "Mar 14 2026"
+heroImage: "../../assets/java-dev.jpg"
+badge: "DOCUMENTACIÓN TÉCNICA 📂"
+---
+import { Image } from 'astro:assets';
+import imgDatabase from '../../assets/inventory_app.png';
+import { Layers, ShieldCheck, Database, Layout, GitBranch, Cpu, CheckCircle2, Terminal, Rocket} from 'lucide-astro';
+import TechBlock from '../../components/TechBlock.astro';
+
+<div class="mt-8 mb-12">
+    <h2 class="text-3xl font-bold text-white mb-4">💼 La Solución para tu Negocio</h2>
+    <p class="text-lg text-slate-400 leading-relaxed border-l-4 border-primary pl-6 italic">
+        "Transformamos la complejidad operativa en procesos fluidos. Un ecosistema diseñado para empresas que buscan control total: desde el ingreso de un producto hasta la liquidación final del sueldo."
+    </p>
+</div>
+
+{/* --- FEATURE GRID --- */}
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 my-10 not-prose">
+  <div class="p-8 bg-gradient-to-br from-primary/10 to-transparent border border-white/10 rounded-3xl hover:border-primary/40 transition-all group">
+    <div class="w-12 h-12 bg-primary/20 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+        <Database class="text-primary" size={28} />
+    </div>
+    <h3 class="text-white font-bold text-xl mb-2">Stock Inteligente</h3>
+    <p class="text-sm text-slate-400 leading-relaxed">Alertas de stock crítico y trazabilidad completa de proveedores en tiempo real.</p>
+  </div>
+  
+  <div class="p-8 bg-gradient-to-br from-secondary/10 to-transparent border border-white/10 rounded-3xl hover:border-secondary/40 transition-all group">
+    <div class="w-12 h-12 bg-secondary/20 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+        <Terminal class="text-secondary" size={28} />
+    </div>
+    <h3 class="text-white font-bold text-xl mb-2">Cierre de Caja</h3>
+    <p class="text-sm text-slate-400 leading-relaxed">Módulos de pago integrados para una gestión de caja sin discrepancias y cierres automáticos.</p>
+  </div>
+  
+  <div class="p-8 bg-gradient-to-br from-success/10 to-transparent border border-white/10 rounded-3xl hover:border-success/40 transition-all group">
+    <div class="w-12 h-12 bg-success/20 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+        <ShieldCheck class="text-success" size={28} />
+    </div>
+    <h3 class="text-white font-bold text-xl mb-2">Capital Humano</h3>
+    <p class="text-sm text-slate-400 leading-relaxed">Administración de empleados con liquidación de sueldos integrada según roles.</p>
+  </div>
+</div>
+
+{/* --- ARQUITECTURA DE DESARROLLO --- */}
+<div class="my-16">
+    <div class="flex items-center gap-3 mb-8">
+        <Layers class="text-primary" />
+        <h2 class="text-2xl font-bold text-white uppercase tracking-wider">Arquitectura de Desarrollo</h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="space-y-6">
+            <div class="flex gap-4">
+                <div class="flex-none w-1 bg-primary/30 rounded-full"></div>
+                <div>
+                    <h4 class="text-white font-bold mb-1">Patrón Multicapa (Tiered)</h4>
+                    <p class="text-sm text-slate-400">Implementación estricta de **Entidad-Servicio-Repositorio-Controlador** para desacoplar responsabilidades.</p>
+                </div>
+            </div>
+            <div class="flex gap-4">
+                <div class="flex-none w-1 bg-secondary/30 rounded-full"></div>
+                <div>
+                    <h4 class="text-white font-bold mb-1">Seguridad Granular</h4>
+                    <p class="text-sm text-slate-400">Validación de roles y permisos a nivel de método (Method Security) para acceso crítico.</p>
+                </div>
+            </div>
+            <div class="flex gap-4">
+                <div class="flex-none w-1 bg-success/30 rounded-full"></div>
+                <div>
+                    <h4 class="text-white font-bold mb-1">Data Integrity</h4>
+                    <p class="text-sm text-slate-400">Uso de **DTOs y Mappers** para proteger modelos y `@Transactional` para evitar estados inconsistentes.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white/[0.02] border border-white/10 rounded-3xl p-8">
+            <h5 class="text-xs font-mono text-primary mb-4 uppercase tracking-widest">// Business Logic Hierarchy</h5>
+            <ul class="space-y-4 font-mono text-xs">
+                <li class="flex items-center gap-2 text-slate-300"> <CheckCircle2 size={14} class="text-primary"/> VentaController</li>
+                <li class="flex items-center gap-2 text-slate-300 ml-4"> <CheckCircle2 size={14} class="text-primary"/> VentaService</li>
+                <li class="flex items-center gap-2 text-slate-400 ml-8 italic"> ↳ EmpleadoValidator</li>
+                <li class="flex items-center gap-2 text-slate-400 ml-8 italic"> ↳ StockValidator</li>
+                <li class="flex items-center gap-2 text-slate-300 ml-4"> <CheckCircle2 size={14} class="text-primary"/> VentaRepository</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+{/* --- FRONTEND & UX --- */}
+<div class="bg-gradient-to-r from-blue-900/10 to-purple-900/10 border border-white/5 rounded-3xl p-8 md:p-12 my-16">
+    <div class="flex flex-col md:flex-row gap-10 items-center">
+        <div class="flex-1">
+            <div class="flex items-center gap-2 text-secondary mb-4 font-mono text-sm">
+                <Layout size={18} />
+                <span>Frontend Experience</span>
+            </div>
+            <h3 class="text-3xl font-bold text-white mb-6">Interfaz Orientada a Procesos</h3>
+            <p class="text-slate-400 leading-relaxed mb-6">
+                Desarrollado con **Astro & React**, utilizando **Tailwind CSS** para un entorno reactivo y moderno. El enfoque de UX está centrado en la **eficiencia operativa**: reduciendo la carga cognitiva para que el usuario complete transacciones en segundos.
+            </p>
+            <div class="flex gap-4 mt-5">
+                <span class="px-3 py-1 bg-white/5 rounded-md text-[10px] text-slate-100 border border-white/10">RESPONSIVE</span>
+                <span class="px-3 py-1 bg-white/5 rounded-md text-[10px] text-slate-100 border border-white/10">DARK MODE</span>
+                <span class="px-3 py-1 bg-white/5 rounded-md text-[10px] text-slate-100 border border-white/10">HIGH PERFORMANCE</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+{/* --- ERD & DATABASE --- */}
+<div class="my-20">
+    <div class="flex items-center gap-3 mb-8">
+        <GitBranch class="text-secondary" />
+        <h2 class="text-2xl font-bold text-white uppercase tracking-wider">Modelado de Datos (ERD)</h2>
+    </div>
+    <div class="overflow-hidden rounded-3xl border border-white/10 bg-neutral-900 group shadow-2xl">
+        <Image src={imgDatabase} alt="Esquema dBeaver" class="w-full opacity-70 group-hover:opacity-100 transition-opacity duration-700" />
+    </div>
+</div>
+
+{/* --- ROADMAP TIMELINE --- */}
+<div class="my-20 max-w-4xl mx-auto px-4">
+    <h2 class="text-2xl font-bold text-white mb-16 uppercase tracking-widest text-center md:text-left">Roadmap MVP 2026</h2>
+    
+    <div class="relative flex flex-col gap-12">
+        <div class="absolute left-[19px] top-0 bottom-0 w-0.5 bg-white/10"></div>
+        
+        {/* Hito 1 */}
+        <div class="relative flex items-start gap-8 group">
+            <div class="z-10 flex-none w-10 h-10 rounded-full border border-white/10 bg-neutral-900 text-primary shadow flex items-center justify-center transition-transform group-hover:scale-110">
+                <Cpu size={18} />
+            </div>
+            <div class="flex-1 p-6 bg-white/[0.02] border border-white/5 rounded-2xl hover:border-primary/30 transition-colors">
+                <h4 class="font-bold text-white italic">Finales de Marzo</h4>
+                <p class="text-sm text-slate-400">Lanzamiento de gestión de Proveedores y optimización final de UX/UI.</p>
+            </div>
+        </div>
+
+        {/* Hito 2 */}
+        <div class="relative flex items-start gap-8 group">
+            <div class="z-10 flex-none w-10 h-10 rounded-full border border-white/10 bg-neutral-900 text-secondary shadow flex items-center justify-center transition-transform group-hover:scale-110">
+                <Rocket size={18} />
+            </div>
+            <div class="p-6 bg-white/[0.02] border border-white/5 rounded-2xl flex-1 hover:border-secondary/30 transition-colors">
+                <h4 class="font-bold text-white italic">Q2 2026</h4>
+                <p class="text-sm text-slate-400">Despliegue en entornos Cloud (GCP) con CI/CD automatizado.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{/* --- TECH STACK GLASS --- */}
+<div class="my-20 p-8 border border-white/10 rounded-3xl bg-white/[0.01]">
+    <h3 class="text-center text-xs font-mono text-slate-500 mb-8 uppercase tracking-widest">Stack Tecnológico & Herramientas</h3>
+    <div class="flex flex-wrap justify-center gap-3">
+        {["Spring Boot 3", "JPA / Hibernate", "Postman", "GitHub Actions", "Maven", "Lombok", "Astro", "Tailwind"].map((tech) => (
+            <div class="px-4 py-2 bg-white/5 border border-white/10 rounded-xl text-[11px] font-mono text-slate-400 hover:text-primary hover:border-primary/50 transition-colors">
+                {tech}
+            </div>
+        ))}
+    </div>
+</div>
+
+{/* --- FINAL CTA --- */}
+<div class="mt-20 p-12 bg-gradient-to-b from-primary/10 to-transparent border border-white/10 rounded-[3rem] text-center">
+    <h2 class="text-3xl font-bold text-white mb-6">Arquitectura Robusta. Código Escalable.</h2>
+    <p class="text-slate-400 mb-10 max-w-2xl mx-auto">
+        Este software es el resultado de aplicar estándares de ingeniería para resolver problemas reales de gestión comercial.
+    </p>
+    <div class="flex flex-col md:flex-row gap-4 justify-center mt-6">
+        <a href="https://github.com/JohanaMDev/inventory_app" target="_blank" class="btn btn-primary btn-wide group flex items-center justify-center gap-2">
+            Ver Repositorio 
+            <GitBranch size={18} class="group-hover:rotate-12 transition-transform"/>
+        </a>
+        <a href="/projects" class="btn btn-outline btn-wide">Volver a Proyectos</a>
+    </div>
+</div>

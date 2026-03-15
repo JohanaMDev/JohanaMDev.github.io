@@ -1,0 +1,58 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import { ArrowRight, Code2, Coffee, Rocket } from 'lucide-astro';
+---
+
+<MainLayout title="Johana Veas | Java Software Developer">
+  <section class="mt-4 mb-20">
+    <div class="badge badge-outline border-primary/40 text-primary py-4 px-6 mb-6 font-mono text-xs uppercase tracking-widest italic animate-pulse">
+      Disponible para Desafíos IT // MARZO 2026
+    </div>
+    
+    <h1 class="text-3xl sm:text-5xl md:text-7xl font-extrabold text-white leading-tight mb-6">
+      Building 
+      <span class="bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
+      Robust </span>Backend Solutions.</h1>
+    
+    <p class="text-slate-400 text-lg md:text-xl max-w-2xl mb-10 leading-relaxed">
+      Software Developer especializada en el ecosistema <span class="text-white font-bold italic">Java</span>. 
+      Enfoque en arquitecturas limpias, escalabilidad y la filosofía <span class="text-white font-bold italic">"Get things done"</span>.
+    </p>
+
+    <div class="flex flex-wrap gap-4">
+      <a href="/projects" class="btn btn-primary px-8 shadow-lg shadow-primary/20 group">
+        Ver Proyectos 
+        <ArrowRight size={18} class="group-hover:translate-x-1 transition-transform" />
+      </a>
+      <a href="/cv" class="btn btn-outline border-white/10 text-white px-8">
+        Currículum
+      </a>
+    </div>
+  </section>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
+    <div class="p-8 bg-white/[0.02] border border-white/10 rounded-3xl hover:bg-white/[0.04] transition-all">
+      <div class="p-3 bg-primary/10 rounded-xl text-primary w-fit mb-6">
+        <Code2 size={24} />
+      </div>
+      <h3 class="text-white font-bold text-xl mb-3">Diseño Arquitectónico</h3>
+      <p class="text-slate-400 text-sm leading-relaxed">Aplicación de principios <b>SOLID</b> y <b>DRY</b> para código mantenible.</p>
+    </div>
+
+    <div class="p-8 bg-white/[0.02] border border-white/10 rounded-3xl hover:bg-white/[0.04] transition-all">
+      <div class="p-3 bg-secondary/10 rounded-xl text-secondary w-fit mb-6">
+        <Rocket size={24} />
+      </div>
+      <h3 class="text-white font-bold text-xl mb-3">Get things Done</h3>
+      <p class="text-slate-400 text-sm leading-relaxed">Foco en resultados y entrega de valor real al negocio.</p>
+    </div>
+
+    <div class="p-8 bg-white/[0.02] border border-white/10 rounded-3xl hover:bg-white/[0.04] transition-all">
+      <div class="p-3 bg-accent/10 rounded-xl text-accent w-fit mb-6">
+        <Coffee size={24} />
+      </div>
+      <h3 class="text-white font-bold text-xl mb-3">Java Energy</h3>
+      <p class="text-slate-400 text-sm leading-relaxed">Pasión por el backend robusto, Spring Boot y el alto rendimiento.</p>
+    </div>
+  </div>
+</MainLayout>

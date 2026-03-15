@@ -1,0 +1,139 @@
+---
+title: "Ingeniería Personal: Mi Roadmap de Especialización Java"
+description: "Un desafío de 11 meses diseñado para adquirir competencias de nivel Senior mediante el desarrollo de software robusto."
+pubDate: "Feb 22 2026"
+heroImage: "../../assets/focus-dev.jpg"
+---
+
+import TechBlock from "../../components/TechBlock.astro";
+import StatCard from "../../components/StatCard.astro";
+
+<TechBlock title="🎯 El Desafío" type="info">
+  Ante la imposibilidad de cursar una carrera tradicional, he diseñado mi propio
+  **Plan de Carrera de 11 meses**. Mi objetivo es dominar las competencias de un
+  **Desarrollador Java Senior**: desde algoritmos hasta arquitecturas
+  distribuidas.
+</TechBlock>
+
+<strong>🏛️ Pilares de Formación </strong>
+
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-8">
+  <StatCard
+    label="Arquitectura"
+    value="POO Avanzada"
+    icon="☕​"
+    color="primary"
+  />
+  <StatCard label="Datos" value="JPA & SQL" icon="🐘" color="secondary" />
+  <StatCard label="Cloud" value="Spring Boot" icon="🍃" color="success" />
+</div>
+
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 my-10 not-prose">
+  <div class="p-6 bg-white/[0.03] border border-white/10 rounded-2xl">
+    <h5 class="text-primary font-bold text-xs uppercase mb-2">01. Diseño</h5>
+    <p class="text-sm text-slate-400">
+      Aplicación de principios <strong>SOLID, KISS</strong> y patrones de diseño
+      (Strategy, Factory) para código escalable.
+    </p>
+  </div>
+  <div class="p-6 bg-white/[0.03] border border-white/10 rounded-2xl">
+    <h5 class="text-secondary font-bold text-xs uppercase mb-2">02. Persistencia</h5>
+    <p class="text-sm text-slate-400">
+      Optimización de consultas y gestión de estados con{" "}
+      <strong>Hibernate</strong> para alto rendimiento.
+    </p>
+  </div>
+  <div class="p-6 bg-white/[0.03] border border-white/10 rounded-2xl">
+    <h5 class="text-success font-bold text-xs uppercase mb-2">03. Ecosistema</h5>
+    <p class="text-sm text-slate-400">
+      Implementación de <strong>Spring Security, JWT</strong> y despliegue de
+      microservicios robustos.
+    </p>
+  </div>
+</div>
+
+<strong>📅 Mi Roadmap de Ingeniería</strong>
+
+<div class="relative pl-8 my-12 before:absolute before:inset-0 before:left-5 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-primary before:via-secondary before:to-transparent">
+
+<div class="relative mb-12 group">
+  <div class="absolute -left-8 top-0 flex items-center justify-center w-10 h-10 rounded-full border-2 border-primary bg-base-300 text-primary z-10 font-bold shadow-[0_0_15px_rgba(var(--p),0.2)]">
+    01
+  </div>
+
+  <div class="ml-6 p-0 overflow-hidden rounded-2xl border border-white/10 shadow-xl bg-white/[0.02] hover:border-primary/40 transition-all duration-300">
+    <div class="bg-primary/10 px-5 py-2 border-b border-white/5">
+      <span class="text-[10px] font-black uppercase tracking-widest text-primary">
+        Meses 1-3: Persistencia
+      </span>
+    </div>
+    <div class="p-6">
+      <h4 class="text-slate-100 font-bold text-lg mb-2 text-balance">
+        Sistema de Gestión de Inventario
+      </h4>
+      <p class="text-sm text-slate-400 leading-relaxed italic">
+        "Implementación de lógica de negocio compleja, delegación de
+        validaciones y manejo de excepciones personalizadas en el ecosistema
+        Spring."
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="relative mb-12 group">
+  <div class="absolute -left-8 top-0 flex items-center justify-center w-10 h-10 rounded-full border-2 border-secondary bg-base-300 text-secondary z-10 font-bold shadow-[0_0_15px_rgba(var(--s),0.2)]">
+    02
+  </div>
+
+  <div class="ml-6 p-0 overflow-hidden rounded-2xl border border-white/10 shadow-xl bg-white/[0.02] hover:border-secondary/40 transition-all duration-300">
+    <div class="bg-secondary/10 px-5 py-2 border-b border-white/5">
+      <span class="text-[10px] font-black uppercase tracking-widest text-secondary">
+        Meses 4-6: Seguridad
+      </span>
+    </div>
+    <div class="p-6">
+      <h4 class="text-slate-100 font-bold text-lg mb-2 text-balance">
+        Task Manager Pro
+      </h4>
+      <p class="text-sm text-slate-400 leading-relaxed italic">
+        "Foco en protocolos REST, seguridad avanzada con Spring Security, JWT y
+        gestión de permisos mediante RBAC."
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="relative mb-4 group">
+  <div class="absolute -left-8 top-0 flex items-center justify-center w-10 h-10 rounded-full border-2 border-accent bg-base-300 text-accent z-10 font-bold shadow-[0_0_15px_rgba(var(--a),0.2)]">
+    03
+  </div>
+
+  <div class="ml-6 p-0 overflow-hidden rounded-2xl border border-white/10 shadow-xl bg-white/[0.02] hover:border-accent/40 transition-all duration-300">
+    <div class="bg-accent/10 px-5 py-2 border-b border-white/5">
+      <span class="text-[10px] font-black uppercase tracking-widest text-accent">
+        Meses 7-11: Seniority
+      </span>
+    </div>
+    <div class="p-6">
+      <h4 class="text-slate-100 font-bold text-lg mb-2 text-balance">
+        SaaS & Microservicios
+      </h4>
+      <p class="text-sm text-slate-400 leading-relaxed italic">
+        "Escalabilidad con Docker, optimización de rendimiento, sistemas
+        distribuidos y metodología TDD."
+      </p>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<TechBlock title="🚀 Metodología Profesional" type="info">
+  Aplico un enfoque **Full Stack** en cada proyecto: Backend robusto en Java,
+  interfaces dinámicas en React y seguridad como prioridad desde el diseño
+  inicial.
+</TechBlock>
+
+<div class="bg-primary/10 border-l-4 border-primary p-6 my-8 rounded-r-2xl italic text-slate-200 shadow-sm">
+  "Mi educación no depende de un aula, sino de la disciplina inquebrantable."
+</div>

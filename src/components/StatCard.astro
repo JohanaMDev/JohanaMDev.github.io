@@ -1,0 +1,10 @@
+---
+const { label, value, icon, color = "primary" } = Astro.props;
+---
+<div class={`bg-base-200 border border-base-content/5 p-5 rounded-2xl flex items-center gap-4 shadow-sm hover:border-${color}/40 transition-colors`}>
+  <div class={`text-3xl text-${color}`}>{icon}</div>
+  <div>
+    <p class="text-[10px] uppercase font-bold opacity-50 tracking-tighter">{label}</p>
+    <p class="text-xl font-mono font-bold">{value}</p>
+  </div>
+</div>

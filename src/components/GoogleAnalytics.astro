@@ -1,0 +1,25 @@
+---
+/* Tu ID de seguimiento real */
+const gaId = 'G-3775SWRYXE';
+---
+
+<script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}></script>
+
+<script is:inline define:vars={{ gaId }}>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+
+  // Inicialización estándar
+  gtag('js', new Date());
+  gtag('config', gaId);
+
+  // Soporte para Astro View Transitions
+  // Esto asegura que cada navegación cuente como una "página vista" nueva
+  document.addEventListener('astro:page-load', () => {
+    gtag('config', gaId, {
+      page_path: window.location.pathname,
+    });
+  });
+</script>

@@ -1,0 +1,82 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import imgInventario from "../assets/java-dev.jpg"; 
+import imgLaboratorio from "../assets/java-soft.jpg";
+import ProjectCard from "../components/ProjectCard.astro";
+---
+
+<MainLayout title="Proyectos | Johana Veas" sidebarActiveItemID="projects">
+  <div class="mb-10">
+    <h1 class="text-4xl font-extrabold text-white tracking-tight mb-2">
+      Portfolio de <span class="text-primary italic">Proyectos</span>
+    </h1>
+    <p class="text-slate-400 text-lg">
+      Soluciones de backend robustas y arquitectura escalable.
+    </p>
+  </div>
+
+  <div class="flex items-center gap-4 mb-8">
+    <h3 class="text-xl font-bold text-white uppercase tracking-widest">
+      <span class="text-primary">01.</span> Core Development
+    </h3>
+    <div class="h-[1px] flex-1 bg-gradient-to-r from-primary/30 to-transparent"></div>
+  </div>
+
+  <ProjectCard
+    title="Sistema de Gestión de Inventario y Ventas"
+    img={imgInventario} 
+    desc="Arquitectura robusta en Java/Spring con validación jerárquica. Control total de stock, pagos y gestión fiscal de empleados."
+    url="/projects_info/inventario-doc"
+    github="https://github.com/JohanaMDev/inventory_app"
+    badge="PROYECTO CORE ☕"
+    tags={["Java 17", "Spring Boot 3", "PostgreSQL", "JPA", "Tailwind"]}
+  />
+
+
+  <div class="flex items-center gap-4 mb-8">
+    <h3 class="text-xl font-bold text-white uppercase tracking-widest">
+      <span class="text-secondary">02.</span> Team Projects
+    </h3>
+    <div class="h-[1px] flex-1 bg-gradient-to-r from-secondary/30 to-transparent"></div>
+  </div>
+  <ProjectCard
+    title="FraveMax: Sistema de Ventas"
+    img={imgLaboratorio} 
+    desc="Desarrollo colaborativo de un sistema de ventas para electrodomésticos. Implementación de gestión de productos, clientes y reportes. Proyecto final integrador bajo metodología Scrum."
+    url="/projects_info/fravemax-doc"
+    github="https://github.com/JohanaMDev/VentasFraveMax"
+    badge="ARGENTINA PROGRAMA 4.0 🎓"
+    tags={["Java", "Java Swing", "MariaDB", "Xampp"]}
+  />
+
+
+
+  <div class="flex items-center gap-4 mb-8">
+    <h3 class="text-xl font-bold text-white uppercase tracking-widest">
+      <span class="text-accent">03.</span> Lab & Logic
+    </h3>
+    <div class="h-[1px] flex-1 bg-gradient-to-r from-accent/30 to-transparent"></div>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+    <div class="p-6 bg-white/[0.02] border border-white/10 rounded-2xl hover:border-primary/50 transition-all group">
+      <div class="flex justify-between items-start mb-4">
+        <div class="p-2 bg-primary/10 rounded-lg text-primary text-xl">☕</div>
+        <span class="text-[10px] font-bold text-primary uppercase tracking-widest">Java 17</span>
+      </div>
+      <h4 class="text-white font-bold mb-2 group-hover:text-primary transition-colors">Algoritmos de Gestión</h4>
+      <p class="text-sm text-slate-400 mb-4">Scripts para optimización de procesos y manejo de estructuras de datos complejas.</p>
+      <a href="https://github.com/JohanaMDev" class="text-xs font-bold text-slate-500 hover:text-white">REPOSITORIO →</a>
+    </div>
+
+    <div class="p-6 bg-white/[0.02] border border-white/10 rounded-2xl hover:border-accent/50 transition-all group">
+      <div class="flex justify-between items-start mb-4">
+        <div class="p-2 bg-accent/10 rounded-lg text-accent text-xl">⚛️</div>
+        <span class="text-[10px] font-bold text-accent uppercase tracking-widest">Astro</span>
+      </div>
+      <h4 class="text-white font-bold mb-2 group-hover:text-accent transition-colors">Personal Portfolio</h4>
+      <p class="text-sm text-slate-400 mb-4">Sitio web optimizado con estética de ingeniería y arquitectura de componentes.</p>
+      <a href="#" class="text-xs font-bold text-slate-500 hover:text-white">REPOSITORIO →</a>
+    </div>
+  </div>
+</MainLayout>
