@@ -1,5 +1,5 @@
 {
-  "name": "mi-portfolio",
+  "name": "johanamdev.github.io",
   "type": "module",
   "version": "0.0.1",
   "engines": {
@@ -23,5 +23,6 @@
   },
   "devDependencies": {
     "daisyui": "^5.5.19"
-  }
+  },
+  "packageManager": "pnpm@10.3.0"
 }
