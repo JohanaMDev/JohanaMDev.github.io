@@ -89,6 +89,54 @@ import TechBlock from '../../components/TechBlock.astro';
     </div>
 </div>
 
+{/* --- ARQUITECTURA DEL SISTEMA (SISTEMA DE GESTIÓN) --- */}
+<div class="my-16">
+    <div class="flex items-center gap-3 mb-8">
+        <Layers class="text-secondary" />
+        <h2 class="text-2xl font-bold text-white uppercase tracking-wider">Arquitectura del Sistema</h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="space-y-6">
+            <div class="flex gap-4">
+                <div class="flex-none w-1 bg-secondary/30 rounded-full"></div>
+                <div>
+                    <h4 class="text-white font-bold mb-1">Capas de Responsabilidad</h4>
+                    <p class="text-sm text-slate-400">Gestión de tráfico mediante **Spring MVC** y lógica de negocio centralizada para desacoplar la API del dominio.</p>
+                </div>
+            </div>
+            <div class="flex gap-4">
+                <div class="flex-none w-1 bg-primary/30 rounded-full"></div>
+                <div>
+                    <h4 class="text-white font-bold mb-1">Persistencia y Datos</h4>
+                    <p class="text-sm text-slate-400">Implementación de **Spring Data JPA** con PostgreSQL para un diseño relacional normalizado y escalable.</p>
+                </div>
+            </div>
+            <div class="flex gap-4">
+                <div class="flex-none w-1 bg-success/30 rounded-full"></div>
+                <div>
+                    <h4 class="text-white font-bold mb-1">Validación Jerárquica</h4>
+                    <p class="text-sm text-slate-400">Delegación de validaciones críticas siguiendo el flujo: **Venta ➔ Empleado ➔ Puesto**.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white/[0.02] border border-white/10 rounded-3xl p-8">
+            <h5 class="text-xs font-mono text-secondary mb-4 uppercase tracking-widest">// Technical Architecture Stack</h5>
+            <ul class="space-y-4 font-mono text-xs">
+                <li class="flex items-center gap-2 text-slate-300"> <CheckCircle2 size={14} class="text-secondary"/> Controller Layer (Spring MVC)</li>
+                <li class="flex items-center gap-2 text-slate-300 ml-4"> <CheckCircle2 size={14} class="text-secondary"/> Service Layer (Business Logic)</li>
+                <li class="flex items-center gap-2 text-slate-400 ml-8 italic"> ↳ Security & Role Validation</li>
+                <li class="flex items-center gap-2 text-slate-400 ml-8 italic"> ↳ Transactional Integrity</li>
+                <li class="flex items-center gap-2 text-slate-300 ml-4"> <CheckCircle2 size={14} class="text-secondary"/> Persistence Layer (JPA/Hibernate)</li>
+                <li class="flex items-center gap-2 text-slate-300"> <CheckCircle2 size={14} class="text-secondary"/> Database (PostgreSQL)</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
 {/* --- FRONTEND & UX --- */}
 <div class="bg-gradient-to-r from-blue-900/10 to-purple-900/10 border border-white/5 rounded-3xl p-8 md:p-12 my-16">
     <div class="flex flex-col md:flex-row gap-10 items-center">

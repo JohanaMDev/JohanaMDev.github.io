@@ -2,5 +2,5 @@
 // You can import this data from anywhere in your site by using the `import` keyword.
 
 export const SITE_TITLE = "Johana Veas | Java Developer";
-export const SITE_DESCRIPTION =
-  "Project Leader & Java Backend Developer Portfolio";
+export const SITE_DESCRIPTION ="Java Backend Developer & Project Leader Portfolio";
+export const SITE_IMAGE = '/social-card.png';
